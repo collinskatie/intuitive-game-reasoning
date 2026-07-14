@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<! Modified from file in demo: https://gitlab.pavlovia.org/demos/jsPsych_SimpleReactionTime/blob/master/index.html >
+
+<head>
+	<title>Watching games task</title>
+	<meta charset="UTF-8">
+
+	<script type="text/javascript" src="lib/vendors/jspsych-6.3.0/jspsych.js"></script>
+	<link href="lib/vendors/jspsych-6.3.0/css/jspsych.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="lib/vendors/jspsych-6.3.0/plugins/jspsych-html-keyboard-response.js"></script>
+	<script type="text/javascript" src="lib/vendors/jspsych-6.3.0/plugins/jspsych-html-button-response.js"></script>
+	<script type="text/javascript" src="lib/vendors/jspsych-6.3.0/plugins/jspsych-image-keyboard-response.js"></script>
+	<script type="text/javascript" src="lib/vendors/jspsych-6.3.0/plugins/jspsych-survey-likert.js"></script>
+
+	<script type="text/javascript" src="lib/vendors/jspsych-6.3.0/plugins/jspsych-survey-text.js"></script>
+	<script type="text/javascript" src="custom_plugins/jspsych-multiple-slider.js"></script>
+	<script type="text/javascript" src="lib/vendors/jspsych-6.3.0/plugins/jspsych-instructions.js"></script>
+	<script type="text/javascript" src="lib/vendors/jspsych-6.3.0/plugins/jspsych-survey-multi-choice.js"></script>
+	<script type="text/javascript" src="lib/vendors/jspsych-6.3.0/plugins/jspsych-preload.js"></script>
+	<script type="text/javascript" src="lib/vendors/jspsych-6.3.0/plugins/jspsych-survey-html-form.js"></script>
+
+
+	<script type="text/javascript" src="lib/vendors/jspsych-6.3.0/plugins/jspsych-external-html.js"></script>
+	<script type="text/javascript" src="lib/vendors/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="lib/jspsych-pavlovia-2020.2.js"></script>
+
+	<script type="text/javascript" src="resources/batches.js"></script>
+
+	<!-- <style>
+		 .board {
+			display: grid;
+			gap: 5px;
+			max-width: 520px;
+			height: 520px; /* Fixed height to prevent dynamic changes */
+			/* border: 2px solid black;  Add black border for the entire board */
+		  }
+	  
+		  .cell {
+			width:40px;/*100%; /* Full width for each cell */
+			height: 40px;
+			text-align: center;
+			vertical-align: middle;
+			font-size: 32px;
+			cursor: pointer;
+			border: 4px solid grey; /* Add black border for each cell */
+			display:flex;
+			align-items: center;
+			justify-content: center;
+		  }
+	  
+		  #clear-btn {
+			margin-top: 40px;
+			padding: 10px 20px; /* Increase padding for the button */
+			font-size: 20px; /* Increase font size for the button */
+			cursor: pointer;
+		  } 
+		</style> -->
+		<style> 
+			body, html {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			
+			#gameBoard {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
+				gap: 0; /* Ensure no gaps between cells */
+				justify-content: center;
+				align-items: center;
+				
+			}
+			
+			.cell {
+				width: 40px;
+				height: 40px;
+				background-color: white;
+				border: 0;
+				padding: 0;
+				border: 2px solid black;
+				justify-content: center;
+				align-items: center;         
+				font-size: 1.5rem;           
+				font-weight: bold;          
+				text-align: center;
+			}
+
+			.cell:hover {
+				box-shadow: 0 0 0 2px transparent; /* Default hover effect */
+			}
+			
+			.cell.hover-blue:hover {
+				background: blue;
+				opacity: 0.5;
+			}
+			
+			.cell.hover-red:hover {
+				background: red;
+				opacity: 0.5;
+			}
+
+			.cell.hover-green:hover {
+				background: green;
+				opacity: 0.5;
+			}
+
+			/*Help from: https://dev.to/abthakur/making-the-default-html-button-appealing-645*/
+
+			input#undo-btn.buttons{
+				font-size: 2rem;
+				border: 2px solid #96d2fbee; 
+				background: #96d2fbee;
+				padding: 10px 20px;
+				cursor: pointer;
+				transition: background-color 0.2s ease-in-out;
+				margin-left :5px; 
+				margin-top :5px; 
+				}
+				input#undo-btn.buttons:hover{
+					background: #3967cb
+				}
+
+				input#clear-btn.buttons{
+				font-size: 2rem;
+				border: 2px solid #96d2fbee; 
+				background: #96d2fbee;
+				padding: 10px 20px;
+				cursor: pointer;
+				transition: background-color 0.2s ease-in-out;
+				margin-left :5px; 
+				margin-top :5px; 
+				}
+				input#clear-btn.buttons:hover{
+					background: #3967cb
+				}
+
+				input#jspsych-survey-html-form-next.jspsych-btn {
+        background-color: #2e436b;
+        /*border: 1px solid #222222;*/
+        border-radius: 8px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        /*font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;*/
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 25px;
+        position: relative;
+        outline: none;
+        padding: 13px 23px;
+        text-align: center;
+        text-transform: capitalize;
+        touch-action: auto;
+        transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        width: auto;
+        letter-spacing: 0.5px;
+        margin-top: 15px;
+    }
+
+    input#jspsych-survey-html-form-next.jspsych-btn:focus-visible {
+        box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+        transition: box-shadow .2s;
+      }
+
+     input#jspsych-survey-html-form-next.jspsych-btn:active {
+        background-color: #112242;
+        /*border-color: #000000;*/
+        transform: scale(.96);
+      }
+
+
+     input#jspsych-survey-html-form-next.jspsych-btn:hover {
+        background-color: #112242;
+      }
+			
+			
+			
+
+	  </style>
+
+	<!-- <style>
+		.board {
+		  display: grid;
+		  grid-template-columns: repeat(var(--board-size, 3), 1fr);
+		  gap: 5px;
+		  max-width: 300px;
+		  border: 2px solid black; /* Add black border for the entire board */
+		}
+	
+		.cell {
+		  width: 100%;
+		  height: 40px;
+		  text-align: center;
+		  vertical-align: middle;
+		  font-size: 24px;
+		  cursor: pointer;
+		  border: 1px solid black; /* Add black border for each cell */
+		}
+	
+		#clear-btn {
+		  margin-top: 10px;
+		  padding: 5px 10px;
+		  font-size: 16px;
+		  cursor: pointer;
+		}
+	  </style> -->
+</head>
+
+<body>
+	<script src="task.js"></script>
+
+	<!-- <script type='text/javascript'>
+
+		/* create timeline */
+		var timeline = [];
+
+
+		/* init connection with pavlovia.org */
+		var pavlovia_init = {
+			type: "pavlovia",
+			command: "init"
+		};
+		timeline.push(pavlovia_init);
+
+		/* define welcome message trial */
+		var welcome = {
+			type: "html-keyboard-response",
+			stimulus: "Welcome to the experiment. Press any key to begin."
+		};
+		timeline.push(welcome);
+
+		/* define instructions trial */
+		var instructions = {
+			type: "html-keyboard-response",
+			stimulus: "<p>In this experiment, a circle will appear in the center " +
+				"of the screen.</p><p>If the circle is <strong>blue</strong>, " +
+				"press the letter F on the keyboard as fast as you can.</p>" +
+				"<p>If the circle is <strong>orange</strong>, press the letter J " +
+				"as fast as you can.</p>" +
+				"<div style='width: 700px;'>" +
+				"<div style='float: left;'><img src='img/blue.png'/>" +
+				"<p class='small'><strong>Press the F key</strong></p></div>" +
+				"<div class='float: right;'><img src='img/orange.png'/>" +
+				"<p class='small'><strong>Press the J key</strong></p></div>" +
+				"</div>" +
+				"<p>Press any key to begin.</p>",
+			post_trial_gap: 2000
+		};
+		timeline.push(instructions);
+
+
+		/* test trials */
+		var test_stimuli = [
+			{ stimulus: "img/blue.png", data: { test_part: 'test', correct_response: 'f' } },
+			{ stimulus: "img/orange.png", data: { test_part: 'test', correct_response: 'j' } }
+		];
+
+		var fixation = {
+			type: 'html-keyboard-response',
+			stimulus: '<div style="font-size:60px;">+</div>',
+			choices: jsPsych.NO_KEYS,
+			trial_duration: function () {
+				return jsPsych.randomization.sampleWithoutReplacement([250, 500, 750, 1000, 1250, 1500, 1750, 2000], 1)[0];
+			},
+			data: { test_part: 'fixation' }
+		}
+
+		var test = {
+			type: "image-keyboard-response",
+			stimulus: jsPsych.timelineVariable('stimulus'),
+			choices: ['f', 'j'],
+			data: jsPsych.timelineVariable('data'),
+			on_finish: function (data) {
+				data.correct = data.key_press === jsPsych.pluginAPI.convertKeyCharacterToKeyCode(data.correct_response);
+			},
+		};
+
+		var test_procedure = {
+			timeline: [fixation, test],
+			timeline_variables: test_stimuli,
+			repetitions: 5,
+			randomize_order: true
+		}
+		timeline.push(test_procedure);
+
+		/* define debrief */
+		var debrief_block = {
+			type: "html-keyboard-response",
+			stimulus: function () {
+
+				var trials = jsPsych.data.get().filter({ test_part: 'test' });
+				var correct_trials = trials.filter({ correct: true });
+				var accuracy = Math.round(correct_trials.count() / trials.count() * 100);
+				var rt = Math.round(correct_trials.select('rt').mean());
+
+				return "<p>You responded correctly on " + accuracy + "% of the trials.</p>" +
+					"<p>Your average response time was " + rt + "ms.</p>" +
+					"<p>Press any key to complete the experiment. Thank you!</p>";
+
+			}
+		};
+		timeline.push(debrief_block);
+
+		/* finish connection with pavlovia.org */
+		var pavlovia_finish = {
+			type: "pavlovia",
+			command: "finish",
+			participantId: "JSPSYCH-DEMO"
+		};
+		timeline.push(pavlovia_finish);
+
+
+		/* start the experiment */
+		jsPsych.init({
+			timeline: timeline,
+
+			on_finish: function (data) {
+				jsPsych.data.displayData();
+			}
+		});
+
+	</script> -->
+</body>
+
+
+</html>

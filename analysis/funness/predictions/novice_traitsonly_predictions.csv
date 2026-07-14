@@ -1,0 +1,119 @@
+game_id,avg_prediction
+3.0*3.0*3 pieces in a row wins.,27.005074606960623
+4.0*4.0*3 pieces in a row wins.,40.63441016396151
+5.0*5.0*3 pieces in a row wins.,40.63441016396151
+6.0*6.0*3 pieces in a row wins.,40.63441016396151
+7.0*7.0*3 pieces in a row wins.,40.63441016396151
+8.0*8.0*3 pieces in a row wins.,40.63441016396151
+9.0*9.0*3 pieces in a row wins.,40.63441016396151
+10.0*10.0*3 pieces in a row wins.,40.63441016396151
+10.0*10.0*2 pieces in a row wins.,44.581253815022094
+10.0*10.0*4 pieces in a row wins.,44.581253815022094
+10.0*10.0*5 pieces in a row wins.,44.581253815022094
+10.0*10.0*6 pieces in a row wins.,44.581253815022094
+10.0*10.0*7 pieces in a row wins.,44.581253815022094
+10.0*10.0*8 pieces in a row wins.,44.581253815022094
+10.0*10.0*9 pieces in a row wins.,44.581253815022094
+10.0*10.0*10 pieces in a row wins.,44.581253815022094
+5.0*5.0*2 pieces in a row wins.,44.581253815022094
+5.0*5.0*4 pieces in a row wins.,44.581253815022094
+5.0*5.0*5 pieces in a row wins.,44.581253815022094
+3.0*3.0*2 pieces in a row wins.,30.95191825802115
+7.0*7.0*4 pieces in a row wins.,44.581253815022094
+1.0*5.0*2 pieces in a row wins.,28.022075589282842
+1.0*5.0*3 pieces in a row wins.,24.075231938222302
+1.0*10.0*3 pieces in a row wins.,37.70456749522321
+2.0*5.0*3 pieces in a row wins.,37.70456749522321
+2.0*10.0*3 pieces in a row wins.,37.70456749522321
+3.0*5.0*3 pieces in a row wins.,37.70456749522321
+3.0*10.0*3 pieces in a row wins.,37.70456749522321
+4.0*6.0*3 pieces in a row wins.,37.70456749522321
+4.0*6.0*4 pieces in a row wins.,41.65141114628383
+4.0*9.0*4 pieces in a row wins.,41.65141114628383
+4.0*12.0*4 pieces in a row wins.,41.65141114628383
+4.0*6.0*5 pieces in a row wins.,41.65141114628383
+4.0*9.0*5 pieces in a row wins.,41.65141114628383
+4.0*12.0*5 pieces in a row wins.,41.65141114628383
+5.0*10.0*4 pieces in a row wins.,41.65141114628383
+5.0*10.0*5 pieces in a row wins.,41.65141114628383
+5.0*10.0*6 pieces in a row wins.,41.65141114628383
+3.0*3.0*3 pieces in a row loses.,39.27310946724418
+4.0*4.0*3 pieces in a row loses.,52.90244502424507
+5.0*5.0*3 pieces in a row loses.,52.90244502424507
+10.0*10.0*3 pieces in a row loses.,52.90244502424507
+10.0*10.0*4 pieces in a row loses.,56.84928867530559
+10.0*10.0*5 pieces in a row loses.,56.84928867530559
+10.0*10.0*10 pieces in a row loses.,56.84928867530559
+5.0*5.0*4 pieces in a row loses.,56.84928867530559
+5.0*5.0*5 pieces in a row loses.,56.84928867530559
+7.0*7.0*4 pieces in a row loses.,56.84928867530559
+"3.0*3.0*3 pieces in a row wins. However, a player cannot win by making a diagonal row. Only horizontal and vertical rows count.",31.622849294950605
+"4.0*4.0*3 pieces in a row wins. However, a player cannot win by making a diagonal row. Only horizontal and vertical rows count.",45.25218485195156
+"5.0*5.0*3 pieces in a row wins. However, a player cannot win by making a diagonal row. Only horizontal and vertical rows count.",45.25218485195156
+"10.0*10.0*3 pieces in a row wins. However, a player cannot win by making a diagonal row. Only horizontal and vertical rows count.",45.25218485195156
+"10.0*10.0*4 pieces in a row wins. However, a player cannot win by making a diagonal row. Only horizontal and vertical rows count.",49.199028503012066
+"10.0*10.0*5 pieces in a row wins. However, a player cannot win by making a diagonal row. Only horizontal and vertical rows count.",49.199028503012066
+"10.0*10.0*10 pieces in a row wins. However, a player cannot win by making a diagonal row. Only horizontal and vertical rows count.",49.199028503012066
+"5.0*5.0*4 pieces in a row wins. However, a player cannot win by making a diagonal row. Only horizontal and vertical rows count.",49.199028503012066
+"5.0*5.0*5 pieces in a row wins. However, a player cannot win by making a diagonal row. Only horizontal and vertical rows count.",49.199028503012066
+"7.0*7.0*4 pieces in a row wins. However, a player cannot win by making a diagonal row. Only horizontal and vertical rows count.",49.199028503012066
+"3.0*3.0*3 pieces in a row wins. However, a player can only win by making a diagonal row. Horizontal and vertical rows do not count.",31.622849294950605
+"4.0*4.0*3 pieces in a row wins. However, a player can only win by making a diagonal row. Horizontal and vertical rows do not count.",45.25218485195156
+"5.0*5.0*3 pieces in a row wins. However, a player can only win by making a diagonal row. Horizontal and vertical rows do not count.",45.25218485195156
+"10.0*10.0*3 pieces in a row wins. However, a player can only win by making a diagonal row. Horizontal and vertical rows do not count.",45.25218485195156
+"10.0*10.0*4 pieces in a row wins. However, a player can only win by making a diagonal row. Horizontal and vertical rows do not count.",49.199028503012066
+"10.0*10.0*5 pieces in a row wins. However, a player can only win by making a diagonal row. Horizontal and vertical rows do not count.",49.199028503012066
+"10.0*10.0*10 pieces in a row wins. However, a player can only win by making a diagonal row. Horizontal and vertical rows do not count.",49.199028503012066
+"5.0*5.0*4 pieces in a row wins. However, a player can only win by making a diagonal row. Horizontal and vertical rows do not count.",49.199028503012066
+"5.0*5.0*5 pieces in a row wins. However, a player can only win by making a diagonal row. Horizontal and vertical rows do not count.",49.199028503012066
+"7.0*7.0*4 pieces in a row wins. However, a player can only win by making a diagonal row. Horizontal and vertical rows do not count.",49.199028503012066
+"3.0*3.0*The first player needs 3 pieces in a row to win, but the second player only needs 2 pieces in a row to win.",20.519924822238277
+"4.0*4.0*The first player needs 3 pieces in a row to win, but the second player only needs 2 pieces in a row to win.",34.149260379239216
+"5.0*5.0*The first player needs 3 pieces in a row to win, but the second player only needs 2 pieces in a row to win.",34.149260379239216
+"10.0*10.0*The first player needs 3 pieces in a row to win, but the second player only needs 2 pieces in a row to win.",34.149260379239216
+"10.0*10.0*The first player needs 4 pieces in a row to win, but the second player only needs 3 pieces in a row to win.",38.09610403029972
+"10.0*10.0*The first player needs 5 pieces in a row to win, but the second player only needs 4 pieces in a row to win.",38.09610403029972
+"10.0*10.0*The first player needs 10 pieces in a row to win, but the second player only needs 9 pieces in a row to win.",38.09610403029972
+"5.0*5.0*The first player needs 4 pieces in a row to win, but the second player only needs 3 pieces in a row to win.",38.09610403029972
+"5.0*5.0*The first player needs 5 pieces in a row to win, but the second player only needs 4 pieces in a row to win.",38.09610403029972
+"7.0*7.0*The first player needs 4 pieces in a row to win, but the second player only needs 3 pieces in a row to win.",38.09610403029972
+"3.0*3.0*3 pieces in a row wins. The second player can place 2 pieces as their first move, while the first player can only place 1 piece as their first move.",28.48464435048317
+"4.0*4.0*3 pieces in a row wins. The second player can place 2 pieces as their first move, while the first player can only place 1 piece as their first move.",42.11397990748411
+"5.0*5.0*3 pieces in a row wins. The second player can place 2 pieces as their first move, while the first player can only place 1 piece as their first move.",42.11397990748411
+"10.0*10.0*3 pieces in a row wins. The second player can place 2 pieces as their first move, while the first player can only place 1 piece as their first move.",42.11397990748411
+"10.0*10.0*4 pieces in a row wins. The second player can place 2 pieces as their first move, while the first player can only place 1 piece as their first move.",46.06082355854459
+"10.0*10.0*5 pieces in a row wins. The second player can place 2 pieces as their first move, while the first player can only place 1 piece as their first move.",46.06082355854459
+"10.0*10.0*10 pieces in a row wins. The second player can place 2 pieces as their first move, while the first player can only place 1 piece as their first move.",46.06082355854459
+"5.0*5.0*4 pieces in a row wins. The second player can place 2 pieces as their first move, while the first player can only place 1 piece as their first move.",46.06082355854459
+"5.0*5.0*5 pieces in a row wins. The second player can place 2 pieces as their first move, while the first player can only place 1 piece as their first move.",46.06082355854459
+"7.0*7.0*4 pieces in a row wins. The second player can place 2 pieces as their first move, while the first player can only place 1 piece as their first move.",46.06082355854459
+"3.0*3.0*3 pieces in a row wins. The first player can place 2 pieces as their first move, while the second player can only place 1 piece as their first move.",28.48464435048317
+"4.0*4.0*3 pieces in a row wins. The first player can place 2 pieces as their first move, while the second player can only place 1 piece as their first move.",42.11397990748411
+"5.0*5.0*3 pieces in a row wins. The first player can place 2 pieces as their first move, while the second player can only place 1 piece as their first move.",42.11397990748411
+"10.0*10.0*3 pieces in a row wins. The first player can place 2 pieces as their first move, while the second player can only place 1 piece as their first move.",42.11397990748411
+"10.0*10.0*4 pieces in a row wins. The first player can place 2 pieces as their first move, while the second player can only place 1 piece as their first move.",46.06082355854459
+"10.0*10.0*5 pieces in a row wins. The first player can place 2 pieces as their first move, while the second player can only place 1 piece as their first move.",46.06082355854459
+"10.0*10.0*10 pieces in a row wins. The first player can place 2 pieces as their first move, while the second player can only place 1 piece as their first move.",46.06082355854459
+"5.0*5.0*4 pieces in a row wins. The first player can place 2 pieces as their first move, while the second player can only place 1 piece as their first move.",46.06082355854459
+"5.0*5.0*5 pieces in a row wins. The first player can place 2 pieces as their first move, while the second player can only place 1 piece as their first move.",46.06082355854459
+"7.0*7.0*4 pieces in a row wins. The first player can place 2 pieces as their first move, while the second player can only place 1 piece as their first move.",46.06082355854459
+"3.0*3.0*Each player needs 3 pieces in a row to win. The first player cannot win by making a diagonal row (only horizontal and vertical rows count), but the second player does not have this restriction.",25.137699510228284
+"4.0*4.0*Each player needs 3 pieces in a row to win. The first player cannot win by making a diagonal row (only horizontal and vertical rows count), but the second player does not have this restriction.",38.76703506722917
+"5.0*5.0*Each player needs 3 pieces in a row to win. The first player cannot win by making a diagonal row (only horizontal and vertical rows count), but the second player does not have this restriction.",38.76703506722917
+"10.0*10.0*Each player needs 3 pieces in a row to win. The first player cannot win by making a diagonal row (only horizontal and vertical rows count), but the second player does not have this restriction.",38.76703506722917
+"10.0*10.0*Each player needs 4 pieces in a row to win. The first player cannot win by making a diagonal row (only horizontal and vertical rows count), but the second player does not have this restriction.",42.71387871828973
+"10.0*10.0*Each player needs 5 pieces in a row to win. The first player cannot win by making a diagonal row (only horizontal and vertical rows count), but the second player does not have this restriction.",42.71387871828973
+"10.0*10.0*Each player needs 10 pieces in a row to win. The first player cannot win by making a diagonal row (only horizontal and vertical rows count), but the second player does not have this restriction.",42.71387871828973
+"5.0*5.0*Each player needs 4 pieces in a row to win. The first player cannot win by making a diagonal row (only horizontal and vertical rows count), but the second player does not have this restriction.",42.71387871828973
+"5.0*5.0*Each player needs 5 pieces in a row to win. The first player cannot win by making a diagonal row (only horizontal and vertical rows count), but the second player does not have this restriction.",42.71387871828973
+"7.0*7.0*Each player needs 4 pieces in a row to win. The first player cannot win by making a diagonal row (only horizontal and vertical rows count), but the second player does not have this restriction.",42.71387871828973
+"3.0*3.0*Each player needs 3 pieces in a row to win. The first player can only win by making a diagonal row, but the second player does not have this restriction.",25.137699510228284
+"4.0*4.0*Each player needs 3 pieces in a row to win. The first player can only win by making a diagonal row, but the second player does not have this restriction.",38.76703506722917
+"5.0*5.0*Each player needs 3 pieces in a row to win. The first player can only win by making a diagonal row, but the second player does not have this restriction.",38.76703506722917
+"10.0*10.0*Each player needs 3 pieces in a row to win. The first player can only win by making a diagonal row, but the second player does not have this restriction.",38.76703506722917
+"10.0*10.0*Each player needs 4 pieces in a row to win. The first player can only win by making a diagonal row, but the second player does not have this restriction.",42.71387871828973
+"10.0*10.0*Each player needs 5 pieces in a row to win. The first player can only win by making a diagonal row, but the second player does not have this restriction.",42.71387871828973
+"10.0*10.0*Each player needs 10 pieces in a row to win. The first player can only win by making a diagonal row, but the second player does not have this restriction.",42.71387871828973
+"5.0*5.0*Each player needs 4 pieces in a row to win. The first player can only win by making a diagonal row, but the second player does not have this restriction.",42.71387871828973
+"5.0*5.0*Each player needs 5 pieces in a row to win. The first player can only win by making a diagonal row, but the second player does not have this restriction.",42.71387871828973
+"7.0*7.0*Each player needs 4 pieces in a row to win. The first player can only win by making a diagonal row, but the second player does not have this restriction.",42.71387871828973
