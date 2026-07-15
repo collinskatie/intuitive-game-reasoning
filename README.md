@@ -107,7 +107,7 @@ The directory `stimuli/` contains all games and subsets for particular studies.
 ### Analysis
 The directory `analysis/` contains main files for analyses, e.g., loading and processing human and model data; comparing predictions for payoffs, funness, move selections; R scripts for additional modeling (funness, draw requests). 
 
-**Some example key analysis files:**
+**Some example analysis files:**
 - Main paper figures: `figures_think.ipynb` (just-think data), `figures_play_watch.ipynb` (play and watch comparisons), `figures_param_ablations.ipynb` (lesion analyses), `watch_exp_example_boards.ipynb` (Fig 6 showing example boards [and a demonstration of how to visualize predicted distributions over next actions!])
 - `explore_variance.ipynb`: simulation sample complexity analyses
 - `draw-combined.R`: draw request acceptance/rejection decision modeling
