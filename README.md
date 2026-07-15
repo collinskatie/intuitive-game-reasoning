@@ -8,8 +8,8 @@ This repo hosts the human data as well as model implementations and analyses fro
 - [Installation](#installation)
 - [Directory structure](#directory-structure)
   - [Models](#models)
-  - [Human data and experimental interfaces](#human-data-and-experimental-interfaces)
   - [Model simulations and additional model data](#model-simulations-and-additional-model-data)
+  - [Human data and experimental interfaces](#human-data-and-experimental-interfaces)
   - [Stimuli](#stimuli)
   - [Analysis](#analysis)
 - [Contact](#contact)
@@ -53,7 +53,17 @@ NOTE: if you are interested in running the Intuitive Gamer or related models mor
 - **`intermodel/`**: Inter-model comparison experiments
   - `run_models.py`: Main execution for model vs. model comparisons
   - `heur_vs_rand.py`: Additional strategy comparison utilities
+
  
+### Model simulations and additional model data 
+**`model-data/`**: Saved runs for each agent model, follows similar structure as `human-data` folder
+Please download from: https://zenodo.org/records/21348139 and open in the main folder! 
+- **`think-exp/`**: Model evaluation data (corresponding to human "just think" experiments)
+- **`play-exp/`**: Model gameplay data (distributions over potential next actions)
+(note: `heuristics.txt` is the Intuitive Gamer)
+- **`intermodel/`**: Inter-model comparison results
+- Funness features are also included for the Intuitive Gamer fun model `local_model_readout_fun_features.csv` and alternate models `expert_model_readout_fun_features.csv` (Expert Gamer), `random_model_readout_fun_features.csv` (Random Gamer).
+
 
 ### Human data and experimental interfaces 
 
@@ -82,17 +92,8 @@ Subdirectories:
 **`human-exp-interfaces/`**: Code for the human experiment interfaces. 
 - The `just think` and `watch` experiments both used jsPsych and were run through Pavlovia. 
 - The `human-human-play-exp` was run with Empirica.
-- If you extend any of the interfaces, make sure to adjust the consent form to your appropriate institutional review board/group (and attain consent!) 
-
-### Model simulations and additional model data 
-**`model-data/`**: Saved runs for each agent model, follows similar structure as `human-data` folder
-Please download from: https://zenodo.org/records/21348139 and open in the main folder! 
-- **`think-exp/`**: Model evaluation data (corresponding to human "just think" experiments)
-- **`play-exp/`**: Model gameplay data (distributions over potential next actions)
-(note: `heuristics.txt` is the Intuitive Gamer)
-- **`intermodel/`**: Inter-model comparison results
-- Funness features are also included for the Intuitive Gamer fun model `local_model_readout_fun_features.csv` and alternate models `expert_model_readout_fun_features.csv` (Expert Gamer), `random_model_readout_fun_features.csv` (Random Gamer).
-
+- If you extend any of the interfaces, make sure to adjust the consent form to your appropriate institutional review board/group (and attain consent!)
+  
 ### Stimuli
 The directory `stimuli/` contains all games and subsets for particular studies.
 
