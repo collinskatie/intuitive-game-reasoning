@@ -2,7 +2,7 @@
 
 Welcome to the repo for "People use fast and flat simulation to reason about new games" by Katherine M. Collins*, Cedegao E. Zhang*, Lionel Wong*, Mauricio Barba da Costa*, Graham Todd*, Adrian Weller, Samuel J. Cheyette, Thomas L. Griffiths, and Joshua B. Tenenbaum!
 
-This repo hosts the human data as well as model implementations and analyses from our paper https://arxiv.org/abs/2510.11503 
+This repo hosts the human data as well as model implementations and analyses from our paper https://www.nature.com/articles/s41586-026-10722-1 
 
 ## Table of Contents
 - [Installation](#installation)
@@ -134,4 +134,15 @@ If you have any questions about our code or data, please reach out to Katie Coll
 
 If you draw on our human data or model code, or are otherwise inspired by our work, please consider citing us! 
 
-[ADD WITH REF!]
+````bibtex
+@article{collins2026intuitivegamer,
+  title   = {People use fast and flat simulation to reason about new games},
+  author  = {Collins, Katherine M. and Zhang, Cedegao E. and Wong, Lionel and Barba da Costa, Mauricio and Todd, Graham and Weller, Adrian and Cheyette, Samuel J. and Griffiths, Thomas L. and Tenenbaum, Joshua B.},
+  journal = {Nature},
+  volume  = {655},
+  pages   = {598--607},
+  year    = {2026},
+  doi     = {10.1038/s41586-026-10722-1},
+  url     = {https://www.nature.com/articles/s41586-026-10722-1}
+}
+````
