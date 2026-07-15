@@ -17,7 +17,7 @@ You can try out a demo of reading data and the Intuitive Gamer model at `demo.ip
 
 ## Directory structure
 
-### Human and model data
+### Human data and experimental interfaces 
 
 **`human-data/`**: Contains data for each human experiment. Participants IDs for participants are removed (as they are only pseudoanonymized) and replaced with unique codes. 
 
@@ -46,6 +46,7 @@ Subdirectories:
 - The `human-human-play-exp` was run with Empirica.
 - If you extend any of the interfaces, make sure to adjust the consent form to your appropriate institutional review board/group (and attain consent!) 
 
+### Model simulations and additional model data 
 **`model-data/`**: Saved runs for each agent model, follows similar structure as `human-data` folder
 Please download from: https://zenodo.org/records/21348139 and open in the main folder! 
 - **`think-exp/`**: Model evaluation data (corresponding to human "just think" experiments)
@@ -63,7 +64,6 @@ Contains all games and subsets for particular studies.
 - `game2idx.json`: Mapping from games to indices (used in some analyses)
 - `updated_final_play_game.csv`: Finalized play experiment games (further subset of the 121)
 - `watch_game_stimuli.csv`: Stimuli for watch experiments (further subset of the play-games)
-- `*.ipynb` files: Notebooks for batching and organizing stimuli for different experiments
 
 ### Models (`models/`)
 Contains agent models and utility functions for operating within and over models. 
