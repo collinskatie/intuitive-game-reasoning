@@ -28,7 +28,7 @@ You can try out a demo of reading data and the Intuitive Gamer model at `demo.ip
 ## Directory structure
 
 ### Models 
-The directory `models/` ontains agent models and utility functions for operating within and over models. 
+The directory `models/` contains agent models and utility functions for operating within and over models. 
 
 NOTE: if you are interested in running the Intuitive Gamer or related models more efficiently, we recommend checking out the [Ludax repository](https://github.com/gdrtodd/ludax)! Ludax is a DSL for board games that uses JAX to allow for massive parallelization of environments and search algorithms on the GPU. Reach out to Graham Todd (gdrtodd@gmail.com) from our author team if you need help with setup or implementations.
 
@@ -56,8 +56,7 @@ NOTE: if you are interested in running the Intuitive Gamer or related models mor
 
  
 ### Model simulations and additional model data 
-**`model-data/`**: Saved runs for each agent model, follows similar structure as `human-data` folder
-Please download from: https://zenodo.org/records/21348139 and open in the main folder! 
+**`model-data/`**: Saved runs for each agent model. Please download from: https://zenodo.org/records/21348139 and open in the main folder! 
 - **`think-exp/`**: Model evaluation data (corresponding to human "just think" experiments)
 - **`play-exp/`**: Model gameplay data (distributions over potential next actions)
 (note: `heuristics.txt` is the Intuitive Gamer)
