@@ -63,6 +63,7 @@ Please download from: https://zenodo.org/records/21348139 and open in the main f
 (note: `heuristics.txt` is the Intuitive Gamer)
 - **`intermodel/`**: Inter-model comparison results
 - Funness features are also included for the Intuitive Gamer fun model `local_model_readout_fun_features.csv` and alternate models `expert_model_readout_fun_features.csv` (Expert Gamer), `random_model_readout_fun_features.csv` (Random Gamer).
+- We also include a few LLM comparisons on the just think experiments (in `think-exp`), as described in the Supplement. For a more expansive comparison to different language and reasoning models, check out our related work [Evaluating Language Models' Evaluations of Games](https://arxiv.org/pdf/2510.10930)!
 
 
 ### Human data and experimental interfaces 
